@@ -1,0 +1,16 @@
+{
+  "name": "Silverlight Windowless False Extension",
+  "version": "0.9",
+  "description": "This extension will force all silverlight objects to have windowless set to false.",
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["contentscript.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
